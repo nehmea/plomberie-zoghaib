@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plomberie Zoghaib</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1 id="title">Your Local Plumber</h1>
+        <nav>
+            <a href="#about" id="nav-about">About Us</a>
+            <a href="#contact" id="nav-contact">Contact Us</a>
+            <a href="#gallery" id="nav-gallery">Gallery</a>
+        </nav>
+        <div class="language-switcher">
+            <label for="languageSelect" id="lang-label">Language:</label>
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Us Section -->
+        <section id="about">
+            <img src="images/plumbing_intro.png" alt="Plumbing Intro" class="intro-image">
+            <h2 id="about-title">About Us</h2>
+            <p id="about-text">
+                We are a team of professional plumbers with years of experience. We handle all your plumbing needs with
+                efficiency and care. From small leaks to major installations, we do it all.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <h2 id="contact-title">Contact Us</h2>
+            <p id="contact-address"><strong>Address:</strong> 123 Plumbing St, Cityville</p>
+            <p id="contact-email"><strong>Email:</strong> contact@plumbingservice.com</p>
+            <p id="contact-phone"><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery-section">
+            <h2 id="gallery-title">Gallery</h2>
+            <div class="gallery" id="gallery"></div>
+        </section>
+
+        <!-- Modal for enlarged image -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">&copy; 2024 Your Local Plumber</p>
+    </footer>
+
+</body>
+
+</html>
