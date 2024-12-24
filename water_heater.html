@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Water Heater Service - Your Local Plumber">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Heater Services | Your Local Plumber</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dr. Tube</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact Us</a>
+        </nav>
+
+        <!-- Language Switcher (if needed) -->
+        <div class="language-switcher">
+            <label for="languageSelect" id="language-label">Language:</label>
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Main container is centered, but text is not -->
+    <main class="centered-container">
+        <section class="service-detail">
+            <h2 id="waterHeaterTitle">Water Heater Services</h2>
+            <img src="images/water_heater.jpg" alt="Water Heater" class="water-heater-image">
+
+            <p id="waterHeaterDesc">
+                We offer comprehensive water heater services, including installation, replacement, and repair.
+                Our team has the expertise to handle all types of water heaters, ensuring you always have hot water
+                when you need it.
+            </p>
+
+            <ul id="waterHeaterList">
+                <li>Installation of new water heaters</li>
+                <li>Replacing outdated or broken units</li>
+                <li>Routine maintenance and inspection</li>
+                <li>Emergency repairs</li>
+            </ul>
+
+            <a href="index.html#contact" class="cta-button" id="waterHeaterContactLink">Contact Us</a>
+        </section>
+        <!-- Gallery Section -->
+        <section id="gallery-section">
+            <h2 id="gallery-title">Gallery</h2>
+            <div class="gallery" id="gallery"></div>
+        </section>
+
+        <!-- Modal for enlarged image -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+    </main>
+
+    <footer>
+        <p id="waterHeaterFooter">&copy; 2024 Dr. Tube</p>
+    </footer>
+</body>
+
+</html>

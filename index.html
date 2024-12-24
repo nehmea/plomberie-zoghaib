@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plomberie Zoghaib</title>
+    <title>Dr. Tube</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
 
     <!-- Header and Navigation -->
     <header>
-        <h1 id="title">Your Local Plumber</h1>
+        <h1 id="title">Dr. Tube</h1>
         <nav>
-            <a href="#about" id="nav-about">About Us</a>
-            <a href="#contact" id="nav-contact">Contact Us</a>
-            <a href="#gallery" id="nav-gallery">Gallery</a>
+            <a href="#about" id="navAbout">About Us</a>
+            <a href="#contact" id="navContact">Contact Us</a>
+            <a href="#gallery" id="navGallery">Gallery</a>
         </nav>
         <div class="language-switcher">
             <label for="languageSelect" id="lang-label">Language:</label>
@@ -30,42 +30,97 @@
 
     <!-- Main Content -->
     <main>
+
         <!-- About Us Section -->
         <section id="about">
             <img src="images/plumbing_intro.png" alt="Plumbing Intro" class="intro-image">
-            <h2 id="about-title">About Us</h2>
-            <p id="about-text">
+            <h2 id="aboutTitle">About Us</h2>
+            <p id="aboutText">
                 We are a team of professional plumbers with years of experience. We handle all your plumbing needs with
                 efficiency and care. From small leaks to major installations, we do it all.
             </p>
         </section>
 
+        <!-- our mission -->
+        <section class="our-mission">
+            <div class="text-content">
+                <h1>Our Mission</h1>
+                <p>Welcome to your trusted destination for plumbing and heating solutions in Montreal. Whether you need
+                    residential or commercial services, our experts at Plomberie D'Experts are here to provide reliable
+                    and efficient solutions tailored to your needs.</p>
+                <div class="services">
+                    <div class="service">
+                        <img src="icon1.png" alt="Plumbing Services">
+                        <p>Reliable plumbing solutions for your peace of mind.</p>
+                    </div>
+                    <div class="service">
+                        <img src="icon2.png" alt="Bathroom Renovations">
+                        <p>Transform your bathrooms into functional and beautiful spaces.</p>
+                    </div>
+                    <div class="service">
+                        <img src="icon3.png" alt="Heating Systems">
+                        <p>Efficient heating systems for ultimate comfort.</p>
+                    </div>
+                    <div class="service">
+                        <img src="icon4.png" alt="Sewer Inspections">
+                        <p>Precise sewer inspections for clear and clean solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="plumber.jpg" alt="Professional Plumber">
+            </div>
+        </section>
+
         <!-- Contact Us Section -->
         <section id="contact" class="contact-section">
-            <h2 id="contact-title">Contact Us</h2>
-            <p id="contact-address"><strong>Address:</strong> 123 Plumbing St, Cityville</p>
-            <p id="contact-email"><strong>Email:</strong> contact@plumbingservice.com</p>
-            <p id="contact-phone"><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <h2 id="contactTitle">Contact Us</h2>
+            <p id="contactAddress"><strong>Address:</strong> 123 Plumbing St, Cityville</p>
+            <p id="contactEmail"><strong>Email:</strong> contact@plumbingservice.com</p>
+            <p id="contactPhone"><strong>Phone:</strong> +1 (555) 123-4567</p>
         </section>
 
-        <!-- Gallery Section -->
-        <section id="gallery-section">
-            <h2 id="gallery-title">Gallery</h2>
-            <div class="gallery" id="gallery"></div>
+        <!-- Services Section with Cards (Grid Layout) -->
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="card-grid">
+
+                <!-- Card 1: Water Heater -->
+                <div class="card">
+                    <img src="images/water_heater.jpg" alt="Water Heater" />
+                    <h3>Water Heater</h3>
+                    <p>From installation to repairs, we handle all your water heater needs.</p>
+                    <a href="water_heater.html" class="cta-button">Learn More</a>
+                </div>
+
+                <!-- Card 2: Drain Cleaning -->
+                <div class="card">
+                    <img src="images/drain_cleaning.jpg" alt="Drain Cleaning" />
+                    <h3>Drain Cleaning</h3>
+                    <p>Fast and efficient drain clearing for residential or commercial properties.</p>
+                    <a href="drain_cleaning.html" class="cta-button">Learn More</a>
+                </div>
+
+                <!-- Card 3: Leak Repair -->
+                <div class="card">
+                    <img src="images/leak_repair.jpg" alt="Leak Repair" />
+                    <h3>Leak Repair</h3>
+                    <p>Prompt leak detection and repair services to prevent water damage.</p>
+                    <a href="leak_repair.html" class="cta-button">Learn More</a>
+                </div>
+
+                <!-- (Optionally add a 4th card here, or more if you like) -->
+
+            </div>
         </section>
 
-        <!-- Modal for enlarged image -->
-        <div id="imageModal" class="modal" onclick="closeModal()">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="fullImage">
-        </div>
+
     </main>
 
     <!-- Footer -->
     <footer>
-        <p id="footer-text">&copy; 2024 Your Local Plumber</p>
+        <p id="footer-text">&copy; Dr. Tube</p>
     </footer>
-
 </body>
 
 </html>

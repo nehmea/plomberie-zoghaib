@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   loadGallery();
-  setLanguage("en"); // Default language is English
+  setLanguage("fr"); // Default language is English
 });
 
 function enlargeImage(src) {
@@ -18,6 +18,7 @@ function closeModal() {
 // Dynamically load gallery images
 function loadGallery() {
   const gallery = document.getElementById("gallery");
+  if (!gallery) return;
   const imageCount = 3; // Number of images
   const thumbExtensions = ["jpg", "jpeg", "png"];
   const fullExtensions = ["jpg", "jpeg", "png", "tif", "tiff"];
@@ -88,7 +89,7 @@ function checkImage(src, callback) {
 // Translation dictionaries
 const translations = {
   en: {
-    title: "Plomberie Zoghaib",
+    title: "Dr. Tube",
     navAbout: "About Us",
     navContact: "Contact Us",
     navGallery: "Gallery",
@@ -102,9 +103,20 @@ const translations = {
     contactPhone: "Phone: +1 (555) 123-4567",
     galleryTitle: "Gallery",
     footerText: "© 2024 Your Local Plumber",
+    waterHeaterTitle: "Water Heater Services",
+    waterHeaterDesc:
+      "We offer comprehensive water heater services, including installation, replacement, and repair. Our team has the expertise to handle all types of water heaters, ensuring you always have hot water when you need it.",
+    waterHeaterList: [
+      "Installation of new water heaters",
+      "Replacing outdated or broken units",
+      "Routine maintenance and inspection",
+      "Emergency repairs",
+    ],
+    waterHeaterContactLink: "Contact Us",
+    waterHeaterFooter: "© 2024 Your Local Plumber",
   },
   fr: {
-    title: "Plomberie Zoghaib",
+    title: "Dr. Tube",
     navAbout: "À Propos",
     navContact: "Contactez-Nous",
     navGallery: "Galerie",
@@ -118,36 +130,44 @@ const translations = {
     contactPhone: "Téléphone : +1 (555) 123-4567",
     galleryTitle: "Galerie",
     footerText: "© 2024 Votre Plombier Local",
+    waterHeaterTitle: "Services de Chauffe-Eau",
+    waterHeaterDesc:
+      "Nous offrons des services complets de chauffe-eau, y compris l'installation, le remplacement et la réparation. Notre équipe possède l'expertise nécessaire pour gérer tous les types de chauffe-eau, garantissant de l'eau chaude à tout moment.",
+    waterHeaterList: [
+      "Installation de nouveaux chauffe-eau",
+      "Remplacement d'appareils anciens ou défectueux",
+      "Entretien et inspection réguliers",
+      "Réparations d'urgence",
+    ],
+    waterHeaterContactLink: "Contactez-Nous",
+    waterHeaterFooter: "© 2024 Votre Plombier Local",
   },
 };
 
 function setLanguage(lang) {
-  document.getElementById("title").innerText = translations[lang].title;
-  document.getElementById("nav-about").innerText = translations[lang].navAbout;
-  document.getElementById("nav-contact").innerText =
-    translations[lang].navContact;
-  document.getElementById("nav-gallery").innerText =
-    translations[lang].navGallery;
-  document.getElementById("lang-label").innerText =
-    translations[lang].langLabel;
+  // 1) Get the translations for the selected language
+  const dict = translations[lang];
+  if (!dict) return; // If no such language, do nothing
 
-  document.getElementById("about-title").innerText =
-    translations[lang].aboutTitle;
-  document.getElementById("about-text").innerText =
-    translations[lang].aboutText;
+  // 2) Loop through each key-value pair in the language object
+  Object.entries(dict).forEach(([key, value]) => {
+    // 3) Attempt to find an element with id = key
+    const element = document.getElementById(key);
 
-  document.getElementById("contact-title").innerText =
-    translations[lang].contactTitle;
-  document.getElementById("contact-address").innerText =
-    translations[lang].contactAddress;
-  document.getElementById("contact-email").innerText =
-    translations[lang].contactEmail;
-  document.getElementById("contact-phone").innerText =
-    translations[lang].contactPhone;
+    // If no element matches this key, skip
+    if (!element) return;
 
-  document.getElementById("gallery-title").innerText =
-    translations[lang].galleryTitle;
-
-  document.getElementById("footer-text").innerText =
-    translations[lang].footerText;
+    // 4) If the value is an array, we assume it's meant for a list
+    if (Array.isArray(value)) {
+      // Example: waterHeaterList => array of bullet points
+      // We'll find all <li> children and update them
+      const listItems = element.querySelectorAll("li");
+      for (let i = 0; i < listItems.length; i++) {
+        listItems[i].innerText = value[i] || "";
+      }
+    } else {
+      // Otherwise, just set innerText
+      element.innerText = value;
+    }
+  });
 }
