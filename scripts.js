@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   loadGallery();
-  setLanguage("fr"); // Default language is English
+  setLanguage("fr"); // Default language is French
 });
 
 function enlargeImage(src) {
@@ -88,33 +88,6 @@ function checkImage(src, callback) {
 
 // Translation dictionaries
 const translations = {
-  en: {
-    title: "Dr. Tube",
-    navAbout: "About Us",
-    navContact: "Contact Us",
-    navGallery: "Gallery",
-    langLabel: "Language:",
-    aboutTitle: "About Us",
-    aboutText:
-      "A professional plumber with years of experience. We handle all your plumbing needs with efficiency and care. From small leaks to major installations, we do it all.",
-    contactTitle: "Contact Us",
-    contactAddress: "Address: 123 Plumbing St, Cityville",
-    contactEmail: "Email: contact@plumbingservice.com",
-    contactPhone: "Phone: +1 (555) 123-4567",
-    galleryTitle: "Gallery",
-    footerText: "© 2024 Your Local Plumber",
-    waterHeaterTitle: "Water Heater Services",
-    waterHeaterDesc:
-      "We offer comprehensive water heater services, including installation, replacement, and repair. Our team has the expertise to handle all types of water heaters, ensuring you always have hot water when you need it.",
-    waterHeaterList: [
-      "Installation of new water heaters",
-      "Replacing outdated or broken units",
-      "Routine maintenance and inspection",
-      "Emergency repairs",
-    ],
-    waterHeaterContactLink: "Contact Us",
-    waterHeaterFooter: "© 2024 Your Local Plumber",
-  },
   fr: {
     title: "Dr. Tube",
     navAbout: "À Propos",
@@ -141,6 +114,33 @@ const translations = {
     ],
     waterHeaterContactLink: "Contactez-Nous",
     waterHeaterFooter: "© 2024 Votre Plombier Local",
+  },
+  en: {
+    title: "Dr. Tube",
+    navAbout: "About Us",
+    navContact: "Contact Us",
+    navGallery: "Gallery",
+    langLabel: "Language:",
+    aboutTitle: "About Us",
+    aboutText:
+      "A professional plumber with years of experience. We handle all your plumbing needs with efficiency and care. From small leaks to major installations, we do it all.",
+    contactTitle: "Contact Us",
+    contactAddress: "Address: 123 Plumbing St, Cityville",
+    contactEmail: "Email: contact@plumbingservice.com",
+    contactPhone: "Phone: +1 (555) 123-4567",
+    galleryTitle: "Gallery",
+    footerText: "© 2024 Your Local Plumber",
+    waterHeaterTitle: "Water Heater Services",
+    waterHeaterDesc:
+      "We offer comprehensive water heater services, including installation, replacement, and repair. Our team has the expertise to handle all types of water heaters, ensuring you always have hot water when you need it.",
+    waterHeaterList: [
+      "Installation of new water heaters",
+      "Replacing outdated or broken units",
+      "Routine maintenance and inspection",
+      "Emergency repairs",
+    ],
+    waterHeaterContactLink: "Contact Us",
+    waterHeaterFooter: "© 2024 Your Local Plumber",
   },
 };
 
