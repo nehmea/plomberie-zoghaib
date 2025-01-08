@@ -3,29 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Water Heater Service - Your Local Plumber">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Heater Services | Your Local Plumber</title>
+    <title>Tuyau magique</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 </head>
 
 <body>
 
+    <!-- Header and Navigation -->
     <header>
-        <h1>Dr. Tube</h1>
+        <h1 id="title">Tuyau Magique</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#services">Services</a>
-            <a href="index.html#contact">Contact Us</a>
+            <a href="#about" id="navAbout">About Us</a>
+            <a href="#contact" id="navContact">Contact Us</a>
+            <a href="#gallery" id="navGallery">Gallery</a>
         </nav>
-
-        <!-- Language Switcher (if needed) -->
         <div class="language-switcher">
-            <label for="languageSelect" id="language-label">Language:</label>
+            <label for="languageSelect" id="langLabel">Language:</label>
             <select id="languageSelect" onchange="setLanguage(this.value)">
-                <option value="en">English</option>
                 <option value="fr">Français</option>
+                <option value="en">English</option>
             </select>
         </div>
     </header>
