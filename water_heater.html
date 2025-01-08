@@ -34,7 +34,7 @@
     <main class="centered-container">
         <section class="service-detail">
             <h2 id="waterHeaterTitle">Water Heater Services</h2>
-            <img src="images/water_heater.jpg" alt="Water Heater" class="water-heater-image">
+            <img src="images/services/waterHeater/water_heater.jpg" alt="Water Heater" class="water-heater-image">
 
             <p id="waterHeaterDesc">
                 We offer comprehensive water heater services, including installation, replacement, and repair.
@@ -68,5 +68,15 @@
         <p id="waterHeaterFooter">&copy; 2024 Dr. Tube</p>
     </footer>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Example: If this is the waterHeater page:
+        loadPageGallery("waterHeater");
+
+        // If you have language logic, etc., do it here
+        // setLanguage("en");
+    });
+</script>
 
 </html>
