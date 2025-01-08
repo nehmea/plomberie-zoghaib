@@ -11,19 +11,20 @@
 
 <body>
 
-    <!-- Header and Navigation -->
     <header>
         <h1 id="title">Tuyau Magique</h1>
         <nav>
-            <a href="#about" id="navAbout">About Us</a>
-            <a href="#contact" id="navContact">Contact Us</a>
-            <a href="#gallery" id="navGallery">Gallery</a>
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#contact">Contact Us</a>
         </nav>
+
+        <!-- Language Switcher (if needed) -->
         <div class="language-switcher">
-            <label for="languageSelect" id="langLabel">Language:</label>
+            <label for="languageSelect" id="language-label">Language:</label>
             <select id="languageSelect" onchange="setLanguage(this.value)">
-                <option value="fr">Français</option>
                 <option value="en">English</option>
+                <option value="fr">Français</option>
             </select>
         </div>
     </header>
