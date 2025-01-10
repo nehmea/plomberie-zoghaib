@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyau magique</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1 id="title">Tuyau Magique</h1>
+        <nav>
+            <a href="#our-mission" id="navAbout">Notre Mission</a>
+            <a href="#contact" id="navContact">Contactez-Nous</a>
+            <a href="#services" id="navServices">Nos Services</a>
+        </nav>
+        <!-- The Google Translate dropdown will appear here -->
+        <div id="language-switcher"></div>
+    </header>
+
+    <!-- Main container is centered, but text is not -->
+    <main class="centered-container">
+        <section class="service-detail">
+            <h2 id="internalRenovationTitle">Entrée d'Eau</h2>
+            <img src="../images/services/main_valve/20210830_085538.jpg" alt="Rénovation Intérieure"
+                class="service-page-image">
+
+            <p id="mainValveDesc">
+                Nous proposons des services complets pour la vanne principale d’eau, assurant une
+                installation correcte, une réparation rapide et une maintenance préventive. Que vous
+                remarquiez des fuites, des difficultés à couper l’eau ou un mécanisme usé, nous garantissons
+                un fonctionnement optimal de votre réseau d’alimentation, indispensable pour protéger votre
+                habitation contre les dommages liés à l’eau.
+            </p>
+            <br />
+            <ul id="mainValveList">
+                <li>Diagnostic des fuites et inspection du mécanisme de la vanne</li>
+                <li>Réparation ou remplacement de composants défectueux</li>
+                <li>Installation de nouvelles vannes principales conformes aux normes</li>
+                <li>Contrôle de pression et entretien préventif</li>
+            </ul>
+
+            <a href="../index.html#contact" class="cta-button" id="internalRenovationContactLink">
+                Contactez-Nous
+            </a>
+        </section>
+
+        <!-- Section Galerie -->
+        <section id="gallery-section">
+            <h2 id="gallery-title">Galerie</h2>
+            <div class="gallery" id="gallery"></div>
+        </section>
+
+        <!-- Modal for enlarged image -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-text">&copy; Tuyau Magique</p>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Example: If this is the waterHeater page:
+        loadPageGallery("main valve");
+
+        // If you have language logic, etc., do it here
+        // setLanguage("en");
+    });
+</script>
+
+</html>
