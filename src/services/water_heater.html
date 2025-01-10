@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyau magique</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1 id="title">Tuyau Magique</h1>
+        <nav>
+            <a href="#our-mission" id="navAbout">Notre Mission</a>
+            <a href="#contact" id="navContact">Contactez-Nous</a>
+            <a href="#services" id="navServices">Nos Services</a>
+        </nav>
+        <!-- The Google Translate dropdown will appear here -->
+        <div id="language-switcher"></div>
+    </header>
+
+    <!-- Main container is centered, but text is not -->
+    <main class="centered-container">
+        <section class="service-detail">
+            <h2 id="waterHeaterTitle">Services de Chauffe-Eau</h2>
+            <img src="../images/services/water_heater/water_heater.jpg" alt="Chauffe-Eau" class="water-heater-image">
+
+            <p id="waterHeaterDesc">
+                Nous offrons des services complets de chauffe-eau, y compris l’installation, le remplacement et la
+                réparation.
+                Notre équipe possède l’expertise nécessaire pour gérer tous les types de chauffe-eau, garantissant de
+                l’eau chaude
+                à tout moment.
+            </p>
+            <br />
+            <ul id="waterHeaterList">
+                <li>Installation de nouveaux chauffe-eau</li>
+                <li>Remplacement d’appareils obsolètes ou défectueux</li>
+                <li>Entretien et inspection de routine</li>
+                <li>Réparations d’urgence</li>
+            </ul>
+
+            <a href="../index.html#contact" class="cta-button" id="waterHeaterContactLink">Contactez-Nous</a>
+        </section>
+
+        <!-- Section Galerie -->
+        <section id="gallery-section">
+            <h2 id="gallery-title">Galerie</h2>
+            <div class="gallery" id="gallery"></div>
+        </section>
+
+        <!-- Modal for enlarged image -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-text">&copy; Tuyau Magique</p>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Example: If this is the waterHeater page:
+        loadPageGallery("water heater");
+
+        // If you have language logic, etc., do it here
+        // setLanguage("en");
+    });
+</script>
+
+</html>

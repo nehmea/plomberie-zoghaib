@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyau magique</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1 id="title">Tuyau Magique</h1>
+        <nav>
+            <a href="#our-mission" id="navAbout">Notre Mission</a>
+            <a href="#contact" id="navContact">Contactez-Nous</a>
+            <a href="#services" id="navServices">Nos Services</a>
+        </nav>
+        <!-- The Google Translate dropdown will appear here -->
+        <div id="language-switcher"></div>
+        <!-- <div class="language-switcher">
+            <label for="languageSelect" id="langLabel">Language:</label>
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div> -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <img src="images/logo.jpg" alt="Plumbing Intro" class="intro-image">
+            <!-- <h2 id="aboutTitle">About Us</h2>
+            <p id="aboutText">
+                A professional plumber with years of experience. We handle all your plumbing needs with
+                efficiency and care. From small leaks to major installations, we do it all.
+            </p> -->
+        </section>
+
+        <!-- our mission -->
+        <section class="our-mission">
+            <div class="text-content">
+                <h1 id="missionHeader">Notre Mission</h1>
+                <p id="missionText">Bienvenue à votre destination de confiance pour des solutions de plomberie à
+                    Montréal. Que vous ayez besoin de services résidentiels ou commerciaux, nous sommes là pour vous
+                    fournir des solutions fiables et efficaces adaptées à vos besoins.</p>
+                <!-- <div class="services">
+                    <div class="service">
+                        <img src="icon1.png" alt="Plumbing Services">
+                        <p>Reliable plumbing solutions for your peace of mind.</p>
+                    </div>
+                    <div class="service">
+                        <img src="icon2.png" alt="Bathroom Renovations">
+                        <p>Transform your bathrooms into functional and beautiful spaces.</p>
+                    </div>
+                    <div class="service">
+                        <img src="icon3.png" alt="Heating Systems">
+                        <p>Efficient heating systems for ultimate comfort.</p>
+                    </div>
+                    <div class="service">
+                        <img src="icon4.png" alt="Sewer Inspections">
+                        <p>Precise sewer inspections for clear and clean solutions.</p>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="image-content">
+                <img src="images/logo.jpg" alt="Professional Plumber">
+            </div> -->
+        </section>
+
+
+
+        <section id="services" class="services-section">
+            <h2>Nos Services</h2>
+            <div class="card-grid">
+
+                <!-- Carte 1 : Chauffe-Eau -->
+                <div class="card">
+                    <img src="images/services/water_heater/water_heater.jpg" alt="Chauffe-Eau" />
+                    <h3 id="waterHeater">Chauffe-Eau</h3>
+                    <!-- <p>De l'installation aux réparations, nous couvrons tous vos besoins en matière de chauffe-eau.</p> -->
+                    <a href="services/water_heater.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Rénovation intérieure -->
+                <div class="card">
+                    <img src="images/services/renovation/PXL_20240902_131651788.jpg" alt="Rénovation intérieure" />
+                    <h3>Rénovation intérieure</h3>
+                    <!-- <p>Nettoyage rapide et efficace des drains pour les propriétés résidentielles ou commerciales.</p> -->
+                    <a href="drain_cleaning.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Nouvelle construction -->
+                <div class="card">
+                    <img src="images/services/new_construction/Screenshot_20241222-122356.png"
+                        alt="Nouvelle construction" />
+                    <h3>Nouvelle construction</h3>
+                    <!-- <p>Détection et réparation rapides des fuites pour éviter tout dégât d'eau.</p> -->
+                    <a href="leak_repair.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Réparation et installation de robinets -->
+                <div class="card">
+                    <img src="images/services/faucet/PXL_20230627_173931732.jpg" alt="Réparation de robinets" />
+                    <h3>Réparation et installation de robinets</h3>
+                    <!-- <p>Détection et réparation rapides des fuites pour éviter tout dégât d'eau.</p> -->
+                    <a href="leak_repair.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Inspection par caméra -->
+                <div class="card">
+                    <img src="" alt="Inspection par caméra" />
+                    <h3>Inspection par caméra</h3>
+                    <!-- <p>Détection et réparation rapides des fuites pour éviter tout dégât d'eau.</p> -->
+                    <a href="leak_repair.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Raccord et clapet antiretour -->
+                <div class="card">
+                    <img src="" alt="Raccord et clapet antiretour" />
+                    <h3>Raccord et clapet antiretour</h3>
+                    <!-- <p>Détection et réparation rapides des fuites pour éviter tout dégât d'eau.</p> -->
+                    <a href="leak_repair.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Débouchage et nettoyage de drains -->
+                <div class="card">
+                    <img src="" alt="Débouchage et nettoyage de drains" />
+                    <h3>Débouchage et nettoyage de drains</h3>
+                    <!-- <p>Détection et réparation rapides des fuites pour éviter tout dégât d'eau.</p> -->
+                    <a href="leak_repair.html" class="cta-button">En savoir plus</a>
+                </div>
+
+                <!-- Carte : Vanne principale -->
+                <div class="card">
+                    <img src="images/services/main_valve/Screenshot_20241225-114824.png" alt="Vanne principale" />
+                    <h3>Vanne principale</h3>
+                    <!-- <p>Détection et réparation rapides des fuites pour éviter tout dégât d'eau.</p> -->
+                    <a href="leak_repair.html" class="cta-button">En savoir plus</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <h2 id="contactTitle">Contact Us</h2>
+            <p><strong id="contactAddress">Address:</strong> Rue Lise, Laval, QC, Canada, H7X </p>
+            <p><strong id="contactEmail">Email:</strong> contact@plumbingservice.com</p>
+            <p><strong id="contactPhone">Phone:</strong> +1 (514) 827-3299</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">&copy; Tuyau Magique</p>
+    </footer>
+</body>
+
+</html>
