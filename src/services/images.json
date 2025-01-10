@@ -40,5 +40,12 @@
         "../images/services/renovation/PXL_20250109_162736443.jpg",
         "../images/services/renovation/Screenshot_20241219-093304.png",
         "../images/services/renovation/Screenshot_20241219-093429.png"
+    ],
+    "new construction": [
+        "../images/services/new_construction/20211110_145724.jpg",
+        "../images/services/new_construction/PXL_20240508_170020431.jpg",
+        "../images/services/new_construction/Screenshot_20241219-093027.png",
+        "../images/services/new_construction/Screenshot_20241222-122337.png",
+        "../images/services/new_construction/Screenshot_20241222-122356.png"
     ]
 }
