@@ -383,7 +383,7 @@
   }
   
   /* Center only the water heater image */
-  .water-heater-image {
+  .service-page-image {
     display: block;
     margin: 20px auto; /* This centers the image itself horizontally */
     max-width: 100%;
