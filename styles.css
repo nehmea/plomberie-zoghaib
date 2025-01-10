@@ -362,6 +362,24 @@
   .card-grid {
     grid-template-columns: 1fr;
   }
+  header {
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: flex-start; /* Align them to the left (or center if you prefer) */
+    gap: 10px;               /* Spacing between items */
+  }
+  /* If you want nav links each on a new line */
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;  /* Stack links vertically */
+    align-items: flex-start; /* Or center */
+    gap: 10px;               /* Space between links */
+  }
+
+  /* Language switcher can also stack, if desired */
+  #language-switcher {
+    margin-top: 0; /* You can reduce or remove extra margin if stacked */
+  }
 }
 
   

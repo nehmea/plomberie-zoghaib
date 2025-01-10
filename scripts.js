@@ -67,7 +67,7 @@ function closeModal() {
 // 1. Define the callback function that Google Translate expects.
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
-    { pageLanguage: "en" },
+    { pageLanguage: "fr" },
     "language-switcher"
   );
 }
