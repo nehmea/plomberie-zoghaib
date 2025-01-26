@@ -2,10 +2,8 @@
     "index": [],
     "water heater": [
         "../images/services/water_heater/PXL_20241101_180815334.jpg",
-        "../images/services/water_heater/PXL_20241101_180830724.jpg",
         "../images/services/water_heater/Screenshot_20241219-092119.png",
-        "../images/services/water_heater/Screenshot_20241219-092247.png",
-        "../images/services/water_heater/water_heater.jpg"
+        "../images/services/water_heater/Screenshot_20241219-092247.png"
     ],
     "renovation": [
         "../images/services/renovation/20220501_100049.jpg",
@@ -77,5 +75,9 @@
     ],
     "camera": [],
     "fittings": [],
-    "drain": []
+    "drain": [
+        "../images/services/debouchage/20221007-contrat-pure-plomberie-appel-service-Ben-2445-768x1154.webp",
+        "../images/services/debouchage/deblocage-drain.jpg",
+        "../images/services/debouchage/Promo-Drain-Snaking-min.jpg"
+    ]
 }
