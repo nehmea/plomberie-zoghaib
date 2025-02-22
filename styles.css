@@ -109,7 +109,7 @@
   .intro-image {
     display: block;         /* Make the image a block element */
 margin: 0 auto;  
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     align-self: center;
     border: 2px solid #000;
